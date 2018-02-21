@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Tutorial 7</title>
+		<meta charset="utf-8">
+		<style>
+			body{
+				background-color:#CCCCCC;
+				background-image:url(darkTile.gif);
+			}
+			section.wrapper{
+				width:1000px;
+				height:1075px;
+				margin-left:auto;
+				margin-right:auto;
+				background-color:#7a7a7a;
+			}
+			header h1 {
+				color: white;
+				text-align: center;
+				}
+			header p {
+				color: white;
+				text-align: center;
+				font-size: .9em;
+			}
+			header.banner {
+				width:750px;
+				height:90px;
+				position:relative;
+				top:0px;
+				margin-left:auto;
+				margin-right:auto;
+				border:1px solid black;
+				background-color: #991f00;				
+			}
+			nav {
+				background-color:#5C5C5C;
+				width:750px;
+				height:30px;
+				margin-left:auto;
+				margin-right:auto;
+				position:relative;
+				top:3px;
+				border:1px solid black;
+				background-image: -moz-linear-gradient(top, #787a80, #000000);
+			    background-image: -webkit-gradient(linear, center top, center bottom, from(#787a80), to(#000000));
+			    background-image: -o-linear-gradient(top, #787a80, #000000);
+			}
+			div.main{
+				position:relative;
+				top:6px;
+				width:750px;
+				height:925px;
+				margin-left:auto;
+				margin-right:auto;
+				border:1px solid black;
+				background-color:white;
+				-webkit-box-shadow:1px 1px 5px black;
+				-moz-box-shadow:1px 1px 5px black;
+			}
+			div.footer{
+				background-color:black;
+				height:180px;
+				width:752px;
+				margin-left:auto;
+				margin-right:auto;
+				position:relative;
+				bottom:8px;
+				z-index:1;
+				color:white;
+				-webkit-box-shadow:1px 1px 5px black;
+				-moz-box-shadow:1px 1px 5px black;
+			}
+			p.welcome{
+				margin-left:14px;
+				margin-right:15px;
+				text-indent:16px;
+			}
+			a.navbuttons{
+				text-align:center;
+				height:30px;
+				padding-left:14px;
+				padding-right:14px;
+				line-height:30px;
+				margin:0px;
+				display:inline-block;
+				font-size:13px;
+				color:white;
+				text-decoration:none;
+			}
+			a.navbuttons:hover{
+				background-color:#FFD400;
+				color:black;
+				text-decoration:none;
+				cursor:pointer;
+			}
+			img{
+				border:0;
+			}
+			div.trim{
+				background-color:#FFD400;
+				width:750px;
+				height:60px;
+				position:relative;
+				top:0px;
+				font-size:30px;
+
+				/*  The stuff below this is CSS3 styling and not required, but recommended */
+
+				-webkit-box-shadow:0px 2px 6px #000; 
+				-moz-box-shadow:0px 2px 6px #000;
+				border-radius:1px 1px 4px 4px;
+				text-shadow:inset 3px 3px 3px #000;
+			}
+			.header{
+				color:#003399;
+				position:absolute;
+				top:10px;
+				text-shadow:2px 2px 2px grey;
+				left:10px;
+			}
+			.center{
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="wrapper">
+			<header class="banner"><h1>Internet Applications</h1>
+			<p>Tutorial 7 - Working with Multimedia</p>
+			</header>
+			<nav>
+				<a class="navbuttons" href="index.html">Home</a>
+				<a class="navbuttons" href="videos.html">Videos</a>
+				<a class="navbuttons" href="pictures.html">Pictures</a>
+			</nav>
+		
+			<div class="main">
+			<div class="trim">
+				<span class="header">Videos</span>
+			</div>
+			<div class="center">
+			<p> using iframe markup:</p>
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/ZnuwB35GYMY" frameborder="0" allowfullscreen></iframe>
+			<p> using the object markup:</p
+			<object width="560" height="345"><param name="movie" value="http://www.youtube.com/v/fXuJYIisu0g?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/fXuJYIisu0g?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="560" height="345" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+			</div>
+            </div>
+			<footer></footer>
+		</section>
+	</body>
+</html>
